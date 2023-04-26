@@ -845,22 +845,22 @@
       }
 
       function pause() { // Don't change the name - GX Mobile calls it when the app becomes inactive.
-        if (!canvasElement.classList.contains("active")) { // Wait for the canvas to load.
+        //if (!canvasElement.classList.contains("active")) { // Wait for the canvas to load.
           return
-        }
+        //}
         
-        GM_pause();
-        pauseMenu.hidden = false;
-        canvasElement.classList.add("paused");
+        //GM_pause();
+        //pauseMenu.hidden = false;
+        //canvasElement.classList.add("paused");
       }
 
       function resume() {
-        GM_unpause();
-        pauseMenu.hidden = true;
-        canvasElement.classList.remove("paused");
-        canvasElement.classList.add("unpaused");
-        enterFullscreenIfSupported();
-        lockOrientationIfSupported();
+        //GM_unpause();
+        //pauseMenu.hidden = true;
+        //canvasElement.classList.remove("paused");
+        //canvasElement.classList.add("unpaused");
+        //enterFullscreenIfSupported();
+        //lockOrientationIfSupported();
       }
 
       function quitIfSupported() {
